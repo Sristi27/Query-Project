@@ -59,7 +59,7 @@ body {
   }
 
   #form #enterCurrency,#form #enterCountry{
-      width:80%;
+      width:90%;
   }
   .sidenav a:hover {
     color: #f1f1f1;
@@ -81,7 +81,7 @@ body {
     position: absolute;
     top:20%;
     width:50%;
-    left:40%;
+    left:50%;
     transform: translate(-20%,-40%);
   }
   .query{
@@ -107,8 +107,14 @@ body {
     cursor: pointer;
   }
   .slider_value{
-    color: wheat;
-    display: block;
+    color: white;
+    display: inline;
+    margin-left: 8px;
+    font-size:15px;
+  }
+  .spanSize{
+
+    font-size: 13px;
   }
   .mainPage button:hover{
     background-color:black;
@@ -129,13 +135,14 @@ body {
     margin-left:15px;
   }
   .range {
-    width:80%;
+    width:75%;
   }
 
   
   @media screen and (max-height: 600px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+
     .mainPage{
       position: absolute;
       top:30%;
