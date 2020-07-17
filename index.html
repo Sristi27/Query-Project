@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Query</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a style="font-size:28px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <p>
+    <h2 class="styles">Configuration</h2>
+    </p>
+
+    <p class="styles">Select country:</p>
+    <form action="" id="form">
+      <input list="countries" id="enterCountry" name="country">
+
+      <datalist id="countries">
+        <option value="Afghanistan">
+        <option value="Albania">
+        <option value="Angola">
+        <option value="Armenia">
+        <option value="Australia">
+        <option value="Austria">
+        <option value="Azerbaijan">
+        <option value="Bangladesh">
+        <option value="Bahamas">
+        <option value="Belarus">
+        <option value="Barbados">
+      </datalist>
+
+      <input type="submit" hidden="true">
+    </form>
+
+    <p class="styles">Select currency:</p>
+
+    <form action="" id="form">
+      <input list="currencies" id="enterCurrency" name="currency">
+
+      <datalist id="currencies">
+        <option value="Dollar">
+        <option value="Euro">
+        <option value="Yen">
+        <option value="Rupee">
+        <option value="Franc">
+          <option value="Pound">
+      </datalist>
+
+      <input type="submit" hidden="true">
+
+    </form>
+
+    <p class="styles">Number of companies:</p>
+    <div class="slidecontainer styles range-wrap">
+      <span class="slider_value"></span>
+      <input type="range" min="5" max="100" value="10" class="range" id="companies" name="cmp"  onchange="show_value(1)">
+    </div>
+    <div class="styles" style="display: flex;justify-content:space-between;width: 80%;">
+      <span>5</span>
+      <span>100</span>
+    </div>
+
+    <p class="styles">Scale:</p>
+    <div class="slidecontainer styles range-wrap">
+      <span class="slider_value"></span>
+      <input type="range" min="3" max="9" value="6" class="range" id="scale" name="scale"  onchange="show_value(2)">
+    </div>
+    <div class="styles" style="display: flex;justify-content:space-between;width: 80%;">
+      <span>3</span>
+      <span>9</span>
+    </div>
+    <br>
+
+    <h2 class="styles">INR Millions</h2>
+
+    <p class="styles">Period:</p>
+    <input class="styles" type="radio" id="annual" name="period" value="annual" id="period">
+    <label for="annual">Annual</label><br>
+    <input class="styles" type="radio" id="quaterly" name="period" value="quaterly" id="period">
+    <label for="quaterly">Quaterly</label><br>
+
+    <p class="styles">Number of Years:</p>
+    <div class="slidecontainer styles range-wrap">
+      <span class="slider_value"></span>
+      <input type="range" min="3" max="10" value="6" class="range" id="years" name="years"  onchange="show_value(3)">
+      
+    </div>
+    <div class="styles" style="display: flex;justify-content:space-between;width: 80%;padding-bottom:30px;">
+      <span>3</span>
+      <span>10</span>
+    </div>
+    </div>
+
+    
+
+  <span style="font-size:25px;cursor:pointer;margin:15px;" onclick="openNav()">&#9776;</span>
+
+  <div class="mainPage">
+    <h3 style="font-weight:normal;">Built Slot Map</h3>
+    <h4 style="font-weight:normal;">Enter a query</h4>
+    <input type="text" class="query" name="query">
+    <br>
+    <button>Show Results</button>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
