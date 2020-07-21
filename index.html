@@ -16,8 +16,9 @@
     <h2 class="styles">Configuration</h2>
     </p>
 
+    <form  id="form" onsubmit="formSubmit(event)">
+
     <p class="styles">Select country:</p>
-    <form action="" id="form">
       <input list="countries" id="enterCountry" name="country">
 
       <datalist id="countries">
@@ -34,12 +35,9 @@
         <option value="Barbados">
       </datalist>
 
-      <input type="submit" hidden="true">
-    </form>
 
     <p class="styles">Select currency:</p>
 
-    <form action="" id="form">
       <input list="currencies" id="enterCurrency" name="currency">
 
       <datalist id="currencies">
@@ -49,11 +47,8 @@
         <option value="Rupee">
         <option value="Franc">
         <option value="Pound">
-      </datalist>
+      </datalist>  
 
-      <input type="submit" hidden="true">
-
-    </form>
 
     <p class="styles">Number of companies:</p>
     <div class="slidecontainer styles range-wrap">
@@ -104,8 +99,12 @@
     <h4 style="font-weight:normal;">Enter a query</h4>
     <input type="text" class="query" name="query">
     <br>
-    <button type="submit">Show Results</button>
+    <button type="submit" >Show Results</button>
+  </form>
+    <div class="output"></div>
   </div>
+
+ 
 
   <script src="app.js"></script>
 
